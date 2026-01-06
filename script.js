@@ -1,9 +1,28 @@
 //here we'll add the mechanisms behind the Chatbot
 const input = document.getElementById("user-input");
 const chatWindow = document.getElementById("Chat");
+const popUpButton = document.getElementById("pop-up");
 /*create element by id means it ADDS an element to the HTML file
 while get element by id means it GETS an element
 which is already in theHTML file*/
+function toggleChat() {
+    chatWidget.classlist.add("open");
+    //toggles the box in
+    chatWidget.setAttribute("aria-hidden", "false");
+    //not hiding the box anymore
+    input.focus();
+    //puts the cursor in the input box automatically
+}
+
+function closeChat() {
+    chatWidget.classlist.remove("open");
+    chatWidget.classlist.add("close");
+    chatWidget.setAttribute("aria-hidden", "true");
+}
+
+popUpButton.addEventListener("click", toggleChat);
+popUpButton.addEventListener("click", closeChat);
+
 function sendMessage() {
     const userText = input.value.trim();
     if (!userText) return;
