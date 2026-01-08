@@ -16,15 +16,34 @@ function sendMessage() {
 //+= means add on to what's already there
     let reply = "Thank you for your interest in Visi! How can I help you today?";
     if (userText.toLowerCase().includes("hello")) {
-        reply = "Hi, welcome to Visi! How can I help you today?";
+        reply = "Welcome to Georgetown Visitation Preparatory School Admissions 👋
+I’m here to help answer questions about applying, visiting campus, tuition, financial aid, and student life.
+What would you like to learn more about today?";
     }
+    if (userText.toLowercase().includes("hi")) {
+        reply = "Welcome to Georgetown Visitation Preparatory School Admissions 👋
+I’m here to help answer questions about applying, visiting campus, tuition, financial aid, and student life.
+What would you like to learn more about today?"; }
+
+	if (userText.toLowerCase().includes("
+        
+        
+        
+        
+        }
+        
+        
+        
+        
     if (userText.toLowerCase().includes("founded")) {
         reply = "Georgetown Visitation was founded in 1799. It is one of the oldest Catholic schools for girls in the US.";
     }
     if (userText.toLowerCase().includes("Technology")) {
         reply = "Our curriculum includes a 1:1 iPad system which the student would buy then use throughout their years. We also have computer labs, the MacNabb Lab, and a robust STEM program.";}
-    if (userText.toLowerCase().includes("admission")) {
-        reply = "For admission inquiries, please visit our admissions page or contact our admissions office directly.";
+    if (userText.toLowerCase().includes("admissions help")) {
+        reply = "Welcome to Georgetown Visitation Preparatory School Admissions 👋
+I’m here to help answer questions about applying, visiting campus, tuition, financial aid, and student life.
+What would you like to learn more about today?
     }
     chatWindow.innerHTML += `<div class="bot">${reply}</div>`;
     input.value = "";
