@@ -1,5 +1,5 @@
 //here we'll add the mechanisms behind the Chatbot
-const input = document.getElementById("user-input");
+const input = document.getElementById("boop").onclick = sendMessage();
 const chatWindow = document.getElementById("Chat");
 const popUpButton = document.getElementById("pop-up");
 /*create element by id means it ADDS an element to the HTML file
@@ -39,7 +39,7 @@ What would you like to learn more about today?"; }
     if (userText.toLowerCase().includes("founded")) {
         reply = "Georgetown Visitation was founded in 1799. It is one of the oldest Catholic schools for girls in the US.";
     }
-    if (userText.toLowerCase().includes("Technology")) {
+    if (hasAny(["Technology"])) {
         reply = "Our curriculum includes a 1:1 iPad system which the student would buy then use throughout their years. We also have computer labs, the MacNabb Lab, and a robust STEM program.";}
     if (userText.toLowerCase().includes("admissions help")) {
         reply = "Welcome to Georgetown Visitation Preparatory School Admissions 👋
@@ -51,6 +51,7 @@ What would you like to learn more about today?
     input.focus();
     chatWindow.scrollTop = chatWindow.scrollHeight;
 }
+
 input.addEventListener("keydown", (e) => {
   if (e.key === "Enter") sendMessage();
 });
