@@ -5,11 +5,6 @@ const popUpButton = document.getElementById("pop-up");
 /*create element by id means it ADDS an element to the HTML file
 while get element by id means it GETS an element
 which is already in theHTML file*/
-
-
-popUpButton.addEventListener("click", toggleChat);
-popUpButton.addEventListener("click", closeChat);
-
 function sendMessage() {
     const userText = input.value.trim();
     if (!userText) return;
