@@ -1,10 +1,27 @@
 //here we'll add the mechanisms behind the Chatbot
-const input = document.getElementById("boop").onclick = sendMessage();
+const input = document.getElementById("text");
 const chatWindow = document.getElementById("Chat");
 const popUpButton = document.getElementById("pop-up");
+const sendBtn = document.getElementById("sendBtn");
 /*create element by id means it ADDS an element to the HTML file
 while get element by id means it GETS an element
 which is already in theHTML file*/
+
+sendBtn.addEventListener("click", sendMessage);
+input.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") sendMessage();
+});
+
+popUpButton.addEventListener("click", () => {
+    const chatContainer = document.getElementById("chat-container");
+    if (chatContainer.style.display === "none" || !chatContainer.style.display) {
+        chatContainer.style.display = "block";
+    } else {
+        chatContainer.style.display = "none";
+    }
+});
+
+
 function sendMessage() {
     const userText = input.value.trim();
     if (!userText) return;
@@ -51,7 +68,3 @@ What would you like to learn more about today?
     input.focus();
     chatWindow.scrollTop = chatWindow.scrollHeight;
 }
-
-input.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") sendMessage();
-});
