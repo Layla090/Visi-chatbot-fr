@@ -59,9 +59,7 @@ What would you like to learn more about today?"; }
     if (hasAny(["Technology"])) {
         reply = "Our curriculum includes a 1:1 iPad system which the student would buy then use throughout their years. We also have computer labs, the MacNabb Lab, and a robust STEM program.";}
     if (userText.toLowerCase().includes("admissions help")) {
-        reply = "Welcome to Georgetown Visitation Preparatory School Admissions 👋
-I’m here to help answer questions about applying, visiting campus, tuition, financial aid, and student life.
-What would you like to learn more about today?
+        reply = "Welcome to Georgetown Visitation Preparatory School Admissions 👋 I’m here to help answer questions about applying, visiting campus, tuition, financial aid, and student life. What would you like to learn more about today?";
     }
     chatWindow.innerHTML += `<div class="bot">${reply}</div>`;
     input.value = "";
