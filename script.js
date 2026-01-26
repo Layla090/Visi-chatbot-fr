@@ -50,7 +50,7 @@ function sendMessage() {
   const hasAny = (arr) => arr.some((p) => text.includes(p));
 
   // greetings
-  if (hasAny(["hello", "hi", "hey", "ello", "greetings"])) {
+  if (hasAny(["hello", "hi", "hey", "ello", "greetings", "yo"])) {
     reply =
       "Hello! Welcome to Georgetown Visitation Preparatory School Admissions 👋 What would you like to learn more about today?";
   }
