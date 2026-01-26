@@ -52,3 +52,36 @@ border-radius: 4px;
 box-sizing: border-box;
 margin-top: 10px;
 }
+
+.message {
+  max-width: 40%;
+  padding: 10px 14px;
+  margin: 8px 0;
+border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  word-wrap: break-word;
+
+  display: inline-block;
+  clear: both;
+}
+
+.message.user {
+  background: #0A53AF;
+  color: white;
+
+  margin-left: auto;
+  margin-right: 0;
+
+  border-bottom-right-radius: 6px;
+}
+
+.message.bot {
+  background: #e5e5ea;
+  color: black;
+
+  margin-right: auto;
+  margin-left: 0;
+
+  border-bottom-left-radius: 6px;
+}
