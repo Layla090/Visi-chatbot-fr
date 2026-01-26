@@ -11,20 +11,6 @@ input.addEventListener("keydown", (e) => {
   if (e.key === "Enter") sendMessage();
 });
 
-// optional popup toggle (if button exists)
-if (popUpButton) {
-  popUpButton.addEventListener("click", () => {
-    const chatContainer = document.getElementById("chat-container");
-    if (
-      chatContainer.style.display === "none" ||
-      !chatContainer.style.display
-    ) {
-      chatContainer.style.display = "block";
-    } else {
-      chatContainer.style.display = "none";
-    }
-  });
-}
 
 function addMessage(text, sender) {
   const msg = document.createElement("div");
