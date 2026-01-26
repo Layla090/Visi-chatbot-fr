@@ -35,10 +35,6 @@
     right: 30px;
 }
 
-#messages {
-    color: #0A5A3F;
-    font-family: 'Arial, sans-serif';
-}
 #text {
 position: absolute;
 right: 120px;
@@ -67,11 +63,11 @@ border-radius: 12px;
 }
 
 .message.user {
-  background: #0A53AF;
+  background: #0A5A3F;
   color: white;
 
-  margin-left: auto;
-  margin-right: 0;
+  margin-left: 240px;
+  margin-right: 0px;
 
   border-bottom-right-radius: 6px;
 }
@@ -84,4 +80,9 @@ border-radius: 12px;
   margin-left: 0;
 
   border-bottom-left-radius: 6px;
+}
+
+#messages {
+    color: #0A5A3F;
+    font-family: 'Arial, sans-serif';
 }
